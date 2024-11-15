@@ -94,6 +94,12 @@
     
 # История изменения проекта с хешами комитов
 ```
+commit 82b1b2c0e3a70ff553773a127bdd02c2669805bf (HEAD -> lab04)
+Author: maksim_kolesov <holmaks464@gmail.com>
+Date:   Fri Nov 15 06:45:53 2024 +0300
+
+    add_tests
+    
 Author: maksim_kolesov <holmaks464@gmail.com>
 Date:   Fri Sep 20 09:26:58 2024 +0300
 
