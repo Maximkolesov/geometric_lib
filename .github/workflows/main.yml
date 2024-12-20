@@ -1,0 +1,30 @@
+name: CICD
+on:
+  push:
+    branches: [ "lab_04" ]
+  pull_request:
+    branches: [ "lab_04" ]
+  workflow_dispatch:
+jobs:
+  build-ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Run Tests
+        run: python -m unittest tests/unit_tests.py
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Run Tests
+        run: python -m unittest tests/unit_tests.py
